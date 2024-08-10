@@ -1,13 +1,13 @@
-/* Base styles for the entire website */
+/* styles.css */
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Logo section styling */
 .logo {
     text-align: center;
     padding: 20px;
@@ -17,7 +17,7 @@ body {
     color: white;
 }
 
-/* Navigation bar styling */
+/* Navigation Styles */
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -31,9 +31,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-/* Main content grid */
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Main Content Styles */
 main.grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -41,7 +46,6 @@ main.grid {
     margin: 20px;
 }
 
-/* Article section styling */
 article {
     background-color: white;
     padding: 20px;
@@ -60,7 +64,7 @@ article img.feature {
     margin-bottom: 20px;
 }
 
-/* Sidebar (aside) styling */
+/* Sidebar (Aside) Styles */
 aside {
     background-color: white;
     padding: 20px;
@@ -73,7 +77,6 @@ aside h2 {
     margin-bottom: 10px;
 }
 
-/* Image gallery in the sidebar */
 aside ul.photos {
     list-style-type: none;
     padding: 0;
@@ -85,9 +88,14 @@ aside ul.photos {
 aside ul.photos li img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Responsive Design for Samsung Galaxy S23 Ultra and other larger screens */
+aside ul.photos li img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Samsung Galaxy S23 Ultra */
 @media screen and (min-width: 1440px) {
     main.grid {
         grid-template-columns: 2fr 1fr;
